@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --breakpoint-3xl: 1920px;
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+  --color-accent: oklch(77.34% 0.1354 13.34);
+  --color-blackish: oklch(22.21% 0 0);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+  /* ... */
+}
+
+@layer components{
+  .header_top__icon_wrapper{
+    @apply bg-gray-200 rounded p-1 cursor-pointer hover:bg-accent hover:text-white
+  }
+}
+
+@layer components{
+  .notification_dot{
+    @apply absolute bg-red-600  rounded-full top-0 right-0 text-white  text-xs translate-x-1.5 -translate-y-1 px-1 flex justify-center
+  }
+
+@layer components{
+    .header_top_icon_wrapper{
+    @apply bg-gray-200 rounded-md p-1 cursor-pointer hover:bg-accent hover:text-white;
+
+  }
+  .navbar_link:hover{
+    color:oklch(77.34% 0.1354 13.34);
+    transition: all 1s;
+
+  }
+}  
+}
