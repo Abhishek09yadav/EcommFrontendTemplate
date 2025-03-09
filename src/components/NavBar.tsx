@@ -6,16 +6,22 @@ const NavBar = () => {
   return (
     <div className="flex w-fit gap-10 mx-auto font-medim py-4 text-blackish ">
       <Link href="" className="navbar_link ">
-        HOME
+        Home
       </Link>
       <Link href="" className="navbar_link ">
-        HOME
+        Categories
       </Link>
       <Link href="" className="navbar_link ">
-        HOME
+        Mens
       </Link>
       <Link href="" className="navbar_link ">
-        HOME
+        Womens
+      </Link>
+      <Link href="" className="navbar_link ">
+        Kids
+      </Link>
+      <Link href="" className="navbar_link ">
+        Blog
       </Link>
     </div>
   );
