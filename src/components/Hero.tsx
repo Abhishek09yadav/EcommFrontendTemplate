@@ -31,7 +31,7 @@ import Image from 'next/image';
                 src={src}
                 alt={`banner ${index + 1}`}
                 layout="fill"
-                objectFit="contain"
+                objectFit="cover"
                 className='w-full'
               />
             </SwiperSlide>

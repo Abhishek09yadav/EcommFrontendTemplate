@@ -21,7 +21,7 @@ const Headertop = () => {
             {" "}
             <b>Holi Festival </b> Sale{" "} 50% off
           </div>
-          <div className="flex gap-4 text-grey-500 text-xs">
+          <div className="flex gap-4 text-gray-500 text-lg ">
             <select name="currency" id="currency">
               <option value="INR">INR</option>
               <option value="USD">USD</option>
