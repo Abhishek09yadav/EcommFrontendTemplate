@@ -9,7 +9,7 @@ const NewProducts = () => {
   return (
     <div>
       <div className="container px-4 pt-16">
-        <h2 className="flex font-semibold  text-2xl pb-6 font-bold justify-center">
+        <h2 className="flex text-2xl pb-6 font-bold justify-center">
           New Products 
         </h2>
 
