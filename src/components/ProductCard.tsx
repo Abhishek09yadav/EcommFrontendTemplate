@@ -1,11 +1,12 @@
 "use client";
+
 import Image, { StaticImageData } from "next/image";
 import React, { useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { CiStar } from "react-icons/ci";
 import { FaStarHalfAlt, FaStar } from "react-icons/fa";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 interface ProductProps {
   product: {
@@ -46,7 +47,7 @@ const ProductCard: React.FC<ProductProps> = ({ product }) => {
   return (
     <div
       data-aos="fade-up"
-      className="flex flex-col items-center   rounded-lg shadow-md w-full sm:w-[45%] md:w-[30%] lg:[22%] transition-transform hover:scale-105 drop-shadow-md "
+      className="flex flex-col items-center rounded-lg shadow-md w-full sm:w-[45%] md:w-[30%] lg:[22%] transition-transform hover:scale-105 drop-shadow-md "
     >
       <Image
         src={product.image}
@@ -60,7 +61,7 @@ const ProductCard: React.FC<ProductProps> = ({ product }) => {
       </h3>
       <h3 className="from-neutral-500 text-sm">Category: {product.category}</h3>
       <div className="flex text-2xl mt-4 flex-row gap-1">
-        {RenderRatingStars(product.rating   )}
+        {RenderRatingStars(product.rating)}
       </div>
       <div className="flex flex-row items-center justify-around  w-full m-3">
         <div className="flex flex-col  gap-2 mt-3">
@@ -76,10 +77,11 @@ const ProductCard: React.FC<ProductProps> = ({ product }) => {
             </span>
           </div>
         </div>
-
+        <InteractiveHoverButton>Shop Now</InteractiveHoverButton>
+        {/* 
         <Button className="border-purple-200 text-purple-600 bg-transparent hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ">
           Shop Now
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
